@@ -1,0 +1,17 @@
+---
+title: "Copula Code"
+author: "Nathan T. James"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+biblio-style: apalike
+link-citations: yes
+description: "This is a some copula code"
+---
+
+# Introduction
+
+Code from copula texts compiled as a [bookdown](https://bookdown.org/yihui/bookdown/) book.
+
+Github code is [here](https://github.com/ntjames/copula_code)
