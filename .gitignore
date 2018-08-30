@@ -3,5 +3,5 @@
 .RData
 .Ruserdata
 
-*_cache
+*_bookdown_files
 *.Rproj
