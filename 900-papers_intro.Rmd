@@ -1,0 +1,24 @@
+# Papers
+
+```{r setup_papers, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# clear workspace
+rm(list=ls())
+
+# reset packages
+source('helper_funs.R')
+detachAllPackages()
+
+# check for way to do code folding
+```
+
+ref for papers 
+
+dependence mod w cop \@ref(dep)
+
+Index:  
+ Costa et al. \@ref(cos18bay)
+ 
+ [Costa et al.](#cos18bay)
+

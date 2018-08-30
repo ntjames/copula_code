@@ -1,0 +1,24 @@
+## Bayesian joint modelling of benefit and risk in drug development {#cos18bay}
+
+```{r setup_cos18bay, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# clear workspace
+rm(list=ls())
+
+# reset packages
+source('helper_funs.R')
+detachAllPackages()
+
+# check for way to do code folding
+```
+
+Maria Costa, Thomas Drury - Bayesian joint modelling of benefit and risk in drug development
+
+```{r cos18bay_pck}
+# load packages
+libs<-c("magrittr")
+invisible(lapply(libs, library, character.only = TRUE))
+```
+
+summary of chapter 1
