@@ -1,19 +1,9 @@
----
-title: "Nelsen Intro to copulas - Chp 2"
-output:
-  html_document:
-    toc: no
-    toc_depth: 3
-    number_sections: false
-    code_folding: hide
-    theme: paper
-code_folding: hide
-editor_options: 
-  chunk_output_type: console
----
+# Nelsen Intro to copulas
 
-```{r setup, include=FALSE}
+```{r setup_nelsen, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+# check for way to do code folding
 
 library(copBasic)
 library(lattice) # for wireframe
@@ -21,11 +11,21 @@ library(rgl) # for persp3d, etc
 library(magrittr)
 ```
 
-## 2.1 Preliminaries
+reference for intro to copulas
 
-### Ex 2.1 
+## Chp 1
 
-```{r ex2.1, cache=TRUE}
+summary of chapter 1
+
+## Chp 2
+
+chapter 2 intro
+
+### Preliminaries
+
+#### Ex 2.1 
+
+```{r ex2-1, cache=TRUE}
 #H volume generator function 
 mk_Hvol<-function(fun=NULL){
   
@@ -64,13 +64,13 @@ persp(x,y,z1)
 
 ```
 
-The H-volume for $H(x,y)=\max(x,y)$ is `r H1_vol(c(0,1),c(0,1))`, so this function is *not* 2-increasing.
+The H-volume for $H(x,y)=\max(x,y)$ is `r H1_vol(c(0,1),c(0,1))`, so this function is *not* 2-increasing. This is text that refers to Figure \@ref(fig:ex2-1pltb)
 
-```{r ex2.1plta, cache=TRUE, fig.pos="center", fig.cap="Contour plot"}
+```{r ex2-1plta, fig.cap="Contour plot", fig.align="center", cache=TRUE}
 contour(x,y,z1)
 ```
 
-```{r ex2.1pltb, cache=TRUE, fig.pos="center", fig.cap="Color image"}
+```{r ex2-1pltb, fig.cap="Color image", fig.align="center", cache=TRUE}
 image(x,y,z1,col=color)
 ```
 
@@ -163,7 +163,7 @@ movie3d_mod<-function (f, duration, dev = rgl.cur(), ..., fps = 10, movie = "mov
 
 ```
 
-```{r ex2.1pltc, cache=TRUE}
+```{r ex2-1pltc, cache=TRUE}
 zcol <- cut(z1, num_col)
 plotid1<-persp3d(x,y,z1, col=color[zcol])
 
@@ -173,9 +173,9 @@ rglwidget(elementId = "plot3drgl1") %>% playwidget(par3dinterpControl(fn, 0, 10,
        step = 0.1, loop = TRUE, rate = 0.75)
 ```
 
-### Ex 2.2
+#### Ex 2.2
 
-```{r ex2.2, cache=TRUE}
+```{r ex2-2, cache=TRUE}
 # make vectorized function
 H2<-function(x,y) mapply(function(x,y) (2*x-1)*(2*y-1), x,y)
 
@@ -197,15 +197,15 @@ wireframe(z2, drape=TRUE,screen=list(z=30, x=-80))
 
 The H-volume for $H(x,y)=(2x-1)(2y-1)$ is `r H2_vol(c(0,1),c(0,1))`, so this function is 2-increasing.
 
-```{r ex2.2plta, cache=TRUE, fig.pos="center", fig.cap="Contour plot"}
+```{r ex2-2plta, cache=TRUE, fig.pos="center", fig.cap="Contour plot"}
 contour(x,y,z2)
 ```
 
-```{r ex2.2pltb, cache=TRUE, fig.pos="center", fig.cap="Color Image"}
+```{r ex2-2pltb, cache=TRUE, fig.pos="center", fig.cap="Color Image"}
 image(x,y,z2,col=color)
 ```
 
-```{r ex2.2pltc, cache=TRUE}
+```{r ex2-2pltc, cache=TRUE, fig.cap="Interactive Plot"}
 z2col  <- cut(z2, num_col)
 plotid2 <- persp3d(x,y,z2, col=color[z2col])
 
@@ -213,9 +213,9 @@ rglwidget(elementId = "plot3drgl2") %>% playwidget(par3dinterpControl(fn, 0, 10,
        step = 0.1, loop = TRUE, rate = 0.75) 
 ```
 
-### Ex 2.3
+#### Ex 2.3
 
-```{r ex2.3, cache=TRUE}
+```{r ex2-3, cache=TRUE}
 # make vectorized function
 H3<-function(x,y) mapply(function(x,y) ((x+1)*(exp(y)-1))/(x+2*exp(y)-1), x,y)
 
@@ -232,21 +232,21 @@ z3<-outer(x3,y3,FUN="H3")
 #H3(x3[4],y3[2])==z3[4,2]
 ```
 
-```{r ex2.3plta, cache=TRUE}
+```{r ex2-3plta, cache=TRUE}
 contour(x3,y3,z3)
 ```
 
-```{r ex2.3pltb, cache=TRUE}
+```{r ex2-3pltb, cache=TRUE}
 image(x3,y3,z3,col=color)
 ```
 
-```{r ex2.3pltc, include=FALSE, cache=TRUE}
+```{r ex2-3pltc, include=FALSE, cache=TRUE}
 wireframe(z3, drape=TRUE, xlab="x", ylab="y")
 wireframe(z3, drape=TRUE,screen=list(z=30, x=-60), xlab="x", ylab="y")
 wireframe(z3, drape=TRUE,screen=list(z=20, x=-60), xlab="x", ylab="y")
 ```
 
-```{r ex2.3pltd, cache=TRUE}
+```{r ex2-3pltd, cache=TRUE}
 z3col  <- cut(z3, num_col)
 plotid3<-persp3d(x3,y3,z3, col=color[z3col])
 

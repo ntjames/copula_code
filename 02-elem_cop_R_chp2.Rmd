@@ -1,19 +1,16 @@
----
-title: "Elements of Copula Modeling with R - Chp 2"
-author: "Nathan James"
-date: "August 13, 2018"
-output: html_document
-editor_options: 
-  chunk_output_type: console
----
+# Elements of Copula Modeling with R
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## 2.1 Definition and characterization
+## Chp 1
 
-### Independence copula
+## Chp 2
+
+### Definition and characterization
+
+#### Independence copula
 
 ```{r}
 library(copula)
@@ -25,7 +22,9 @@ u <- runif(d) # a random point in the unit hypercube
 (Pi <- pCopula(u, copula = ic)) # the value of the independence copula at u
 
 stopifnot(all.equal(Pi, prod(u))) # check numerical equality of the samples
+```
 
+```{r ex1plt, cache=TRUE}
 wireframe2  (ic, FUN = pCopula, # surface plot of the independence copula
              col.4 = adjustcolor("black", alpha.f = 0.25))
 contourplot2(ic, FUN = pCopula) # contour plot of the independence copula
