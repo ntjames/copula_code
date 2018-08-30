@@ -1,0 +1,9 @@
+## Chp 2 Basics: dependence, tail behavior, and asymmetries
+
+```{r joe_chp2_pck}
+# load packages
+libs<-c("magrittr")
+invisible(lapply(libs, library, character.only = TRUE))
+```
+
+summary of chapter 2

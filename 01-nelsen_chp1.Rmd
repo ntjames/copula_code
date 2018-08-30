@@ -1,0 +1,29 @@
+# An Introduction to Copulas, 2nd ed.
+
+```{r setup_nelsen, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# clear workspace
+rm(list=ls())
+
+# reset packages
+source('helper_funs.R')
+detachAllPackages()
+
+# check for way to do code folding
+```
+
+Nelsen, R. B. (2006). An introduction to copulas, 2nd ed. Springer.
+
+## Chp 1 Introduction
+
+> What are copulas? From one point of view, copulas are functions that join or "couple"" multivariate distribution functions to their one-dimensional marginal distribution functions. Alternatively, copulas are multivariate distribution functions whose one-dimensional margins are uniform on the interval (0,1)
+
+History:  
+1940s Wassily Hoeffding  
+1951 Fréchet bounds and Fréchet classes  
+1959 Abe Sklar, first use of term "copula"  
+1958-1976 probabilistic metric spaces --> Archimedean copulas  
+1981 Schweizer and Wolff copulas and dependence  
+
+This book concentrates on the construction of families of multivariate distributions ans the study of dependence

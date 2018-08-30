@@ -1,0 +1,23 @@
+## Bayesian joint modelling of benefit and risk in drug development {#cos18bay}
+
+```{r setup_cos18bay, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# clear workspace
+rm(list=ls())
+
+# reset packages
+source('helper_funs.R')
+detachAllPackages()
+
+# check for way to do code folding
+```
+
+Costa, M. J., & Drury, T. (2018). Bayesian joint modelling of benefit and risk in drug development. Pharmaceutical statistics, 17(3), 248-263.
+
+```{r cos18bay_pck}
+# load packages
+libs<-c("copula")
+invisible(lapply(libs, library, character.only = TRUE))
+```
+

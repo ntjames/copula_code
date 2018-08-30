@@ -1,0 +1,20 @@
+# Papers
+
+```{r setup_papers, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# clear workspace
+rm(list=ls())
+
+# reset packages
+source('helper_funs.R')
+detachAllPackages()
+
+# check for way to do code folding
+```
+
+
+
+Index:  
+ [Costa et al.](#cos18bay) - Bayesian joint modelling of benefit and risk in drug development
+ 

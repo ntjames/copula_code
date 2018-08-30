@@ -1,0 +1,26 @@
+# Dependence Modeling with Copulas {#dep}
+
+```{r setup_joe, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# clear workspace
+rm(list=ls())
+
+# reset packages
+source('helper_funs.R')
+detachAllPackages()
+
+# check for way to do code folding
+```
+
+Joe, H. (2014). Dependence modeling with copulas. Chapman and Hall/CRC.
+
+## Chp 1 Introduction
+
+```{r joe_chp1_pck}
+# load packages
+libs<-c("magrittr")
+invisible(lapply(libs, library, character.only = TRUE))
+```
+
+summary of chapter 1
