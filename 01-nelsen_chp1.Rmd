@@ -13,17 +13,17 @@ detachAllPackages()
 # check for way to do code folding
 ```
 
-reference for intro to copulas
-Roger B. Nelsen - An Introduction to Copulas, 2nd ed.
+Nelsen, R. B. (2006). An introduction to copulas, 2nd ed. Springer.
 
 ## Chp 1 Introduction
 
-```{r nelsen_chp1_pck}
-# load packages
-libs<-c("copBasic","lattice","rgl","magrittr")
-invisible(lapply(libs, library, character.only = TRUE))
-# use lattice for wireframe
-# use rgl for persp3d, etc
-```
+> What are copulas? From one point of view, copulas are functions that join or "couple"" multivariate distribution functions to their one-dimensional marginal distribution functions. Alternatively, copulas are multivariate distribution functions whose one-dimensional margins are uniform on the interval (0,1)
 
-summary of chapter 1
+History:  
+1940s Wassily Hoeffding  
+1951 Fréchet bounds and Fréchet classes  
+1959 Abe Sklar, first use of term "copula"  
+1958-1976 probabilistic metric spaces --> Archimedean copulas  
+1981 Schweizer and Wolff copulas and dependence  
+
+This book concentrates on the construction of families of multivariate distributions ans the study of dependence
