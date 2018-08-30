@@ -5,11 +5,18 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: 
   bookdown::gitbook:
-      number_sections: FALSE
-      split_by: section+number
+    split_by: section
+    number_sections: FALSE
+    config:
+      toc:
+        collapse: section
+      sharing:
+        github: yes
+        facebook: no
 documentclass: book
 biblio-style: apalike
 link-citations: yes
+github-repo: ntjames/copula_code
 description: "This is a some copula code"
 ---
 
