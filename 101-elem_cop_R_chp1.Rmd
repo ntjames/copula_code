@@ -1,0 +1,21 @@
+# Elements of Copula Modeling with R
+
+```{r setup_elem_cop_R, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# clear workspace
+rm(list=ls())
+
+# reset packages
+source('helper_funs.R')
+detachAllPackages()
+
+# check for way to do code folding
+```
+
+reference for elements of copula modeling with R
+Marius Hofert et al. - Elements of Copula Modeling with R
+
+## Chp 1 
+
+summary of chapter 1

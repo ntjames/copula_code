@@ -1,23 +1,4 @@
-# Nelsen Intro to copulas
-
-```{r setup_nelsen, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-
-# check for way to do code folding
-
-library(copBasic)
-library(lattice) # for wireframe
-library(rgl) # for persp3d, etc
-library(magrittr)
-```
-
-reference for intro to copulas
-
-## Chp 1
-
-summary of chapter 1
-
-## Chp 2
+## Chp 2 Definitions and Basic Properties
 
 chapter 2 intro
 

@@ -1,0 +1,29 @@
+# An Introduction to Copulas, 2nd ed.
+
+```{r setup_nelsen, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# clear workspace
+rm(list=ls())
+
+# reset packages
+source('helper_funs.R')
+detachAllPackages()
+
+# check for way to do code folding
+```
+
+reference for intro to copulas
+Roger B. Nelsen - An Introduction to Copulas, 2nd ed.
+
+## Chp 1 Introduction
+
+```{r nelsen_chp1_pck}
+# load packages
+libs<-c("copBasic","lattice","rgl","magrittr")
+invisible(lapply(libs, library, character.only = TRUE))
+# use lattice for wireframe
+# use rgl for persp3d, etc
+```
+
+summary of chapter 1
