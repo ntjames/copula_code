@@ -13,12 +13,11 @@ detachAllPackages()
 # check for way to do code folding
 ```
 
-Maria Costa, Thomas Drury - Bayesian joint modelling of benefit and risk in drug development
+Costa, M. J., & Drury, T. (2018). Bayesian joint modelling of benefit and risk in drug development. Pharmaceutical statistics, 17(3), 248-263.
 
 ```{r cos18bay_pck}
 # load packages
-libs<-c("magrittr")
+libs<-c("copula")
 invisible(lapply(libs, library, character.only = TRUE))
 ```
 
-summary of chapter 1

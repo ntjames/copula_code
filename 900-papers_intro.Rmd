@@ -13,12 +13,8 @@ detachAllPackages()
 # check for way to do code folding
 ```
 
-ref for papers 
 
-dependence mod w cop \@ref(dep)
 
 Index:  
- Costa et al. \@ref(cos18bay)
+ [Costa et al.](#cos18bay) - Bayesian joint modelling of benefit and risk in drug development
  
- [Costa et al.](#cos18bay)
-
