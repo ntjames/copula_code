@@ -13,8 +13,7 @@ detachAllPackages()
 # check for way to do code folding
 ```
 
-ref for dependence modeling with copulas
-Harry Joe - Dependence Modeling with Copulas
+Joe, H. (2014). Dependence modeling with copulas. Chapman and Hall/CRC.
 
 ## Chp 1 Introduction
 
